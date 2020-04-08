@@ -1,11 +1,14 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 <head>
     <meta charset="UTF-8">
     <title>First Spring Page</title>
 </head>
 <body>
-    <h1>Hello World!</h1>
+    <h1 th:text="'Messaging Application'">Hello World!</h1>
+    <ul>
+        <li th:each="message : ${messages}" th:text="${message.body}"></li>
+    </ul>
     <p>blah, blah, blah...</p>
 </body>
 </html>
