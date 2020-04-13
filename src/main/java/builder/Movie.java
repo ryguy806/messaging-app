@@ -45,4 +45,14 @@ public class Movie {
     public void setNinjas(boolean ninjas) {
         this.ninjas = ninjas;
     }
+
+    @Override
+    public String toString() {
+        return "Movie{" +
+                "title='" + title + '\'' +
+                ", genre='" + genre + '\'' +
+                ", length=" + length +
+                ", ninjas=" + ninjas +
+                '}';
+    }
 }
